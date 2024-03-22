@@ -21,7 +21,6 @@
                         <v-row>
                           <v-col cols="12" sm="7">
                             <v-checkbox label="Remember Me" class="mt-0" color="blue"></v-checkbox>
-
                           </v-col>
                           <v-col cols="12" sm="5">
                             <span class="caption blue--text">Forget password</span>
@@ -29,7 +28,7 @@
                         </v-row>
                         <v-btn color="blue" dark block tile>Login in</v-btn>
                         <h5 class="text-center grey--text mt-4 mb-3">Or Log in using</h5>
-                        <div class="d-flex justify-space-between align-center mx-10 mb-16">
+                        <div class="d-flex justify-center align-center mx-10 mb-16">
                           <v-btn depressed outlined color="grey">
                             <v-icon color="red">fab fa-google</v-icon>
                           </v-btn>
@@ -39,7 +38,6 @@
                           <v-btn depressed outlined color="grey">
                             <v-icon color="light-blue lighten-3">fab fa-twitter</v-icon>
                           </v-btn>
-
                         </div>
                       </v-col>
                     </v-row>
@@ -62,7 +60,7 @@
             </v-window-item>
             <v-window-item :value="2">
               <v-row>
-                <v-col cols="12" sm="6" class="blue ronded-br-xl">
+                <v-col cols="12" sm="6" class="blue rounded-br-xl">
                   <div style="text-align: center; padding: 180px 0;">
                     <v-card-text class="white--text">
                       <h3 class="text-center">Already Signed up</h3>
@@ -105,24 +103,22 @@
                         </v-row>
                         <v-btn color="blue" dark block tile>Sign up</v-btn>
                         <h5 class="text-center grey--text mt-4 mb-3">Or Sign up using</h5>
-                        <div class="d-flex justify-space-between align-center mx-10 mb-11 ">
-                          <v-btn depressed outlined color="grey">
+                        <div class="d-flex justify-center align-center mx-10 mb-16 ">
+                          <v-btn depressed outlined color="grey" class="social-icon">
                             <v-icon color="red">fab fa-google</v-icon>
                           </v-btn>
-                          <v-btn depressed outlined color="grey">
+                          <v-btn depressed outlined color="grey" class="social-icon">
                             <v-icon color="blue">fab fa-facebook-f</v-icon>
                           </v-btn>
-                          <v-btn depressed outlined color="grey">
+                          <v-btn depressed outlined color="grey" class="social-icon">
                             <v-icon color="light-blue lighten-3">fab fa-twitter</v-icon>
                           </v-btn>
-
                         </div>
                       </v-col>
                     </v-row>
                   </v-card-text>
                 </v-col>
               </v-row>
-
             </v-window-item>
           </v-window>
         </v-card>
@@ -132,19 +128,13 @@
 </template>
 
 <script>
-
-
 export default {
   data: () => ({
     step: 1
-  }),
-  propos: {
-    source: String
-  }
-
-
+  })
 }
 </script>
+
 <style scoped>
 .v-application .rounded-bl-xl {
   border-bottom-left-radius: 300px !important;
@@ -154,4 +144,8 @@ export default {
   border-bottom-right-radius: 300px !important;
 }
 
+/* Centering social icons and adding gaps */
+.social-icon {
+  margin: 0 10px;
+}
 </style>
